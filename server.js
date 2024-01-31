@@ -29,7 +29,6 @@ const databaseConnection = async()=>{
         client.release();
     }
     catch(err){
-        console.log("hitting again")
         console.log("database connection error", err)
         databaseStatus = 503
     }
